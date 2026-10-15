@@ -1,0 +1,4 @@
+telethon>=1.36
+cryptography>=42
+# Optional but strongly recommended for fast uploads (Telethon's pure-Python AES is slow):
+#   pip install cryptg

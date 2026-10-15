@@ -1,0 +1,12 @@
+services:
+  mega-bot:
+    build: .
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      DATA_DIR: /app/data
+    volumes:
+      - ./data:/app/data
+    # Optional limits for small hosts:
+    # mem_limit: 512m
+    # cpus: 1.0
